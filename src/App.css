@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+  margin-top: 8rem;
+}
+
+button {
+  font-weight: bold;
+}
+
+button:active {
+  background-color: #9FE8DF;
+}
+
+input {
+  background-color: #F3F9FA;
+}
+
+button,
+input {
+  border: none;
+}
+
+h5 {
+  text-align: right;
+  color: #26C2AE;
+}
+
+h4,
+p {
+  text-align: left;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.darkerGreen {
+  color: #3D6666;
+}
+
+.darkerGreenbg {
+  background-color: #3D6666;
+  color: white;
+}
+
+.amount,
+.calc {
+  width: 50%;
+}
+
+.tipBC {
+  color: #547878;
+}
+
+.whitebg {
+  background-color: white;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 10%;
+}
+
+#customInput {
+  box-sizing: border-box;
+  width: 100%;
+  background: none;
+  border: none;
+}
+
+#inDiv {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+#customInput:active {
+  border: none;
+}
+
+#reset {
+  background-color: #26C2AE;
+  color: #3D6666;
+  border: none;
+}
