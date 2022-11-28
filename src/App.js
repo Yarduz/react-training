@@ -1,7 +1,7 @@
 import './App.css';
 import React, { useState } from 'react';
 
-const initialState = {
+const initialState = { // yay!
   bill: 100,
   tip: 0.1,
   dinners: 2
