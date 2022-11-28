@@ -1,7 +1,7 @@
 import './App.css';
 import React, { useState } from 'react';
 
-const initialState = { // yay!
+const initialState = {
   bill: 100,
   tip: 0.1,
   dinners: 2
@@ -10,7 +10,6 @@ const initialState = { // yay!
 function App() {
   const [state, setState] = useState(initialState);
   const { bill, dinners, tip } = state
-
   const totalBillPP = (bill + (bill * tip)) / dinners;
   const tipBillPP = bill * tip / dinners;
   const displaytotal = dinners ? totalBillPP : 0
@@ -30,7 +29,6 @@ function App() {
     console.log(state)
     setState({ ...state, tip: event.target.value })
   }
-
   return (
     <div className="App d-flex justify-content-center flex-column">
       <div className='title d-flex flex-column'>
@@ -82,33 +80,4 @@ function App() {
     </div >
   );
 }
-
 export default App;
-
-
-// const initialState = {}
-// const bill = document.getElementById('inputBill')
-// const diners = document.getElementById('inputPeople')
-// const customTip = document.getElementById('customTip')
-// const tip = 0
-// const totalAmount = document.getElementById('totalAmount').innerHTML
-// const tipAmount = document.getElementById('tipAmount').innerHTML
-// const numB = document.getElementsByClassName('tipB')
-
-// bill.addEventListener('change', (calculate()))
-
-// function clickTip(event) {
-//   tip = event.target.value
-//   calculate()
-// }
-
-// function reset() {
-//   tip = 0;
-//   bill.value = null;
-//   diners.value = 0;
-// }
-
-// function calculate() {
-//   totalAmount = ((bill.value + bill.value * tip) / diners.value)
-//   tipAmount = (bill.value * tip / diners.value)
-// }
